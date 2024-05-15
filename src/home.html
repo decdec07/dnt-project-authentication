@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="../pages/map.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Gluttony</a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a onclick="openPopup()" class="btn" type="submit">Account</a></li>
+                </ul>
+                <a href="index.html" class="action-btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>            
+                
+            <div class="dropdown_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a onclick="openPopup()" class="btn" type="submit">Account</a></li>
+                <li><a href="#" class="action-btn">Get Started</a></li>
+            </div>
+        </header>
+        
+        <!-- <div class="mapem">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1hOu78R0baHYeV6SJNxKVk88IMBiDDGU&ehbc=2E312F" width="auto" height=" 600px" ></iframe>
+        </div> -->
+            
+        <!-- <form action="index.html">
+            <button>Home Page</button>
+        </form> -->
+        
+    </div>
+
+    <div id="modal-account" class="modal modal-transition">
+        <div class="modal-content center-align">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeOk5caLj6GjLRxxYvzY9XXFmt5pGaHJKaCD_b9ju2NQ&s">
+            <h2 style="background-color: transparent;">Account Details</h2> <br />
+            <div class="modal-content">
+                <p>Name: <span id="userEmail"></span></p>
+                <p>Username: <span id="userName"></span></p>
+            </div>
+            <div class="accountDetails"></div> 
+            <button type="button" onclick="closePopup()">OK</button>
+            <button type="button" onclick="closePopup()" class="logout">Logout?</button>
+
+        </div>
+    </div>
+
+    <!-- <script src="about.js"></script> -->
+</body>
+</html>
